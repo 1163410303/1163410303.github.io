@@ -313,15 +313,15 @@
       
         
           
-            <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.</p>
-<p>You may assume the two numbers do not contain any leading zero, except the number 0 itself.</p>
-<p>Example<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: (2 -&gt; 4 -&gt; 3) + (5 -&gt; 6 -&gt; 4)</span><br><span class="line">Output: 7 -&gt; 0 -&gt; 8</span><br><span class="line">Explanation: 342 + 465 = 807.</span><br></pre></td></tr></table></figure></p>
-<p>大致意思即给你两个链表，每个链表都代表一个非负数，输出一个链表为这两个数的和（链表的顺序是从低位到高位）</p>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>考察链表的模式，链表的定义已经给出如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * Definition for singly-linked list.</span><br><span class="line"> * public class ListNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     ListNode next;</span><br><span class="line"> *     ListNode(int x) &#123; val = x; &#125;</span><br><span class="line"> * &#125;</span><br><span class="line"> */</span><br></pre></td></tr></table></figure></p>
-<p>自然想到按数位从低到高，循环遍历 <code>l1</code> 和<code>l2</code>链表，新定义一个链表从低位到高位依次存储这些值；定义新的链表时应注意初始化的问题，第一次submit时就遇到了空指针的异常；<br>看讨论学到应该初始化一个节点类，用做将要形成的链表的开头标记，并且在给每个next赋值时一定要new；这道题难点在于进位的判断，逢十进位，利用JAVA整数除法向上取整的性质，提取处进位数值.再通过模10的余数得到本位数值；</p>
-<h2 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public ListNode addTwoNumbers(ListNode l1, ListNode l2) &#123;</span><br><span class="line">        ListNode l3_head = new ListNode(0);</span><br><span class="line">        ListNode t1 = l1;</span><br><span class="line">        ListNode t2 = l2;</span><br><span class="line">        ListNode t3 = l3_head;</span><br><span class="line">        int sum = 0;</span><br><span class="line">      while(t1!=null || t2!=null)&#123;</span><br><span class="line">          sum = sum/10;</span><br><span class="line">          if(t1!=null)&#123;</span><br><span class="line">          sum += t1.val;</span><br><span class="line">           t1 = t1.next;</span><br><span class="line">          &#125;</span><br><span class="line">          if(t2!=null)&#123;</span><br><span class="line">          sum+= t2.val;</span><br><span class="line">          t2 = t2.next;</span><br><span class="line">          &#125;</span><br><span class="line">          t3.next = new ListNode(sum%10);</span><br><span class="line">          t3 = t3.next;</span><br><span class="line">      &#125;</span><br><span class="line">        if(sum/10 ==1)&#123;</span><br><span class="line">            t3.next = new ListNode(1);</span><br><span class="line">        &#125;</span><br><span class="line">    </span><br><span class="line">        return l3_head.next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-          
+          题目You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes cont
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/03/20/leetcode/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -439,30 +439,18 @@
       
         
           
-            <h1 id="试着搭建自己的博客并测试markdown的语法"><a href="#试着搭建自己的博客并测试markdown的语法" class="headerlink" title="试着搭建自己的博客并测试markdown的语法"></a>试着搭建自己的博客并测试markdown的语法</h1><h2 id="1：斜体字和粗体字"><a href="#1：斜体字和粗体字" class="headerlink" title="1：斜体字和粗体字"></a>1：斜体字和粗体字</h2><p> 文字两边使用使用 <em> 和 ** 表示斜体和粗体。
-</em>斜体字* 这是斜体字  <strong>粗体字</strong>  这是粗体字</p>
-<h2 id="2-分级标题"><a href="#2-分级标题" class="headerlink" title="2 :分级标题"></a>2 :分级标题</h2><p>在行首加井号表示不同级别的标题，并且可以添加标记[TOC]生成自己的目录结构</p>
-<h2 id="3-增加文字链接"><a href="#3-增加文字链接" class="headerlink" title="3 :增加文字链接"></a>3 :增加文字链接</h2><p>使用 <a href="链接地址">描述</a> 给文字增加超链接。<br>比如这是去我<a href="https://github.com/1163410303" target="_blank" rel="noopener">Github</a>的链接<br>    这是去我<a href="https://player949.com" target="_blank" rel="noopener">博客首页</a>的链接</p>
-<h2 id="4-列表"><a href="#4-列表" class="headerlink" title="4 :列表"></a>4 :列表</h2><h3 id="1-无序列表"><a href="#1-无序列表" class="headerlink" title="1.无序列表"></a>1.无序列表</h3><p>使用 <code>*</code> ，<code>-</code>， <code>+</code> 表示无序列表如下</p>
-<ul>
-<li>表一</li>
-<li>表二</li>
-<li>表三<h3 id="2-有序列表"><a href="#2-有序列表" class="headerlink" title="2.有序列表"></a>2.有序列表</h3>使用数字加点加空格 </li>
-</ul>
-<ol>
-<li>有序列表</li>
-<li>有序列表</li>
-<li>有序列表<h2 id="5：文字引用"><a href="#5：文字引用" class="headerlink" title="5：文字引用"></a>5：文字引用</h2>使用 <code>&gt;</code> 加上文字<br>如<blockquote>
-<p>举头望明月，低头思故乡</p>
-</blockquote>
-<h2 id="6-：-行内小块用单引号包裹"><a href="#6-：-行内小块用单引号包裹" class="headerlink" title="6 ： 行内小块用单引号包裹"></a>6 ： 行内小块用单引号包裹</h2>如<code>Java</code><h2 id="7-：代码块"><a href="#7-：代码块" class="headerlink" title="7 ：代码块"></a>7 ：代码块</h2>用三个<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>/<em> 这样表示代码块
- </em><br> <em>/牛顿迭代法计算平方根<br>    public static double sqrt(double c) {<br>        double temp = 0;<br>        if(c&lt;0) return Double.NaN;<br>        double err = 1e-15;<br>        temp = c;<br>        while(Math.abs(temp - c/temp)&gt;err</em>temp) {<br>            temp = (c/temp + temp)/2.0;<br>        }<br>        return temp;<br>    }<br><code>`</code></p>
-<h2 id="8-插入图片"><a href="#8-插入图片" class="headerlink" title="8.插入图片"></a>8.插入图片</h2><p>如<img src="/images/insert_image1.jpg" alt="hi"></p>
-<h2 id="9-换行"><a href="#9-换行" class="headerlink" title="9.换行"></a>9.换行</h2><p>使用一个或多个 空行 分隔内容段来生成段落<br>在行末输入2个或以上 空格 再回车来生成换行  </p>
-
-          
+          试着搭建自己的博客并测试markdown的语法1：斜体字和粗体字 文字两边使用使用  和 ** 表示斜体和粗体。
+斜体字* 这是斜体字  粗体字  这是粗体字
+2 :分级标题在行首加井号表示不同级别的标题，并且可以添加标记[TOC]生成自己的目录结构
+3 :增加文字链接使用 描述 给文字增加超链接。
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/03/20/hi/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
