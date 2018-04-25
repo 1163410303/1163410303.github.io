@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="leetcode,算法,CTCI," />
+  <meta name="keywords" content="JDK," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="题目You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return">
-<meta name="keywords" content="leetcode,算法,CTCI">
+<meta name="description" content="1.Java集合框架是什么？说出一些集合框架的优点？每种编程语言中都有集合，最初的Java版本包含几种集合类：Vector、Stack、HashTable和Array。随着集合的广泛使用，Java1.2提出了囊括所有集合接口、实现和算法的集合框架。在保证线程安全的情况下使用泛型和并发集合类，Java已经经历了很久。它还包括在Java并发包中，阻塞接口以及它们的实现。集合框架的部分优点如下：（1）使">
+<meta name="keywords" content="JDK">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Add Two Numbers">
-<meta property="og:url" content="http://yoursite.com/2018/03/20/leetcode/index.html">
+<meta property="og:title" content="JDK的优点与特点">
+<meta property="og:url" content="http://yoursite.com/2018/04/06/JDK集合框架的优势 - 副本 (4)/index.html">
 <meta property="og:site_name" content="player949">
-<meta property="og:description" content="题目You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return">
+<meta property="og:description" content="1.Java集合框架是什么？说出一些集合框架的优点？每种编程语言中都有集合，最初的Java版本包含几种集合类：Vector、Stack、HashTable和Array。随着集合的广泛使用，Java1.2提出了囊括所有集合接口、实现和算法的集合框架。在保证线程安全的情况下使用泛型和并发集合类，Java已经经历了很久。它还包括在Java并发包中，阻塞接口以及它们的实现。集合框架的部分优点如下：（1）使">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-23T13:34:17.400Z">
+<meta property="og:updated_time" content="2018-04-25T01:46:18.612Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Add Two Numbers">
-<meta name="twitter:description" content="题目You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return">
+<meta name="twitter:title" content="JDK的优点与特点">
+<meta name="twitter:description" content="1.Java集合框架是什么？说出一些集合框架的优点？每种编程语言中都有集合，最初的Java版本包含几种集合类：Vector、Stack、HashTable和Array。随着集合的广泛使用，Java1.2提出了囊括所有集合接口、实现和算法的集合框架。在保证线程安全的情况下使用泛型和并发集合类，Java已经经历了很久。它还包括在Java并发包中，阻塞接口以及它们的实现。集合框架的部分优点如下：（1）使">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/03/20/leetcode/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/06/JDK集合框架的优势 - 副本 (4)/"/>
 
 
 
 
 
-  <title>Add Two Numbers | player949</title>
+  <title>JDK的优点与特点 | player949</title>
   
 
 
@@ -243,7 +243,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/20/leetcode/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/06/JDK集合框架的优势 - 副本 (4)/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王光远">
@@ -260,7 +260,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Add Two Numbers</h1>
+          <h1 class="post-title" itemprop="name headline">JDK的优点与特点</h1>
         
 
         <div class="post-meta">
@@ -272,8 +272,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-20T22:20:47+08:00">
-                2018-03-20
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-06T15:10:34+08:00">
+                2018-04-06
               </time>
             
 
@@ -310,13 +310,8 @@
       
 
       
-        <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.</p>
-<p>You may assume the two numbers do not contain any leading zero, except the number 0 itself.</p>
-<p>Example<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: (2 -&gt; 4 -&gt; 3) + (5 -&gt; 6 -&gt; 4)</span><br><span class="line">Output: 7 -&gt; 0 -&gt; 8</span><br><span class="line">Explanation: 342 + 465 = 807.</span><br></pre></td></tr></table></figure></p>
-<p>大致意思即给你两个链表，每个链表都代表一个非负数，输出一个链表为这两个数的和（链表的顺序是从低位到高位）</p>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>考察链表的模式，链表的定义已经给出如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * Definition for singly-linked list.</span><br><span class="line"> * public class ListNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     ListNode next;</span><br><span class="line"> *     ListNode(int x) &#123; val = x; &#125;</span><br><span class="line"> * &#125;</span><br><span class="line"> */</span><br></pre></td></tr></table></figure></p>
-<p>自然想到按数位从低到高，循环遍历 <code>l1</code> 和<code>l2</code>链表，新定义一个链表从低位到高位依次存储这些值；定义新的链表时应注意初始化的问题，第一次submit时就遇到了空指针的异常；<br>看讨论学到应该初始化一个节点类，用做将要形成的链表的开头标记，并且在给每个next赋值时一定要new；这道题难点在于进位的判断，逢十进位，利用JAVA整数除法向上取整的性质，提取处进位数值.再通过模10的余数得到本位数值；</p>
-<h2 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">addTwoNumbers</span><span class="params">(ListNode l1, ListNode l2)</span> </span>&#123;</span><br><span class="line">        ListNode l3_head = <span class="keyword">new</span> ListNode(<span class="number">0</span>);</span><br><span class="line">        ListNode t1 = l1;</span><br><span class="line">        ListNode t2 = l2;</span><br><span class="line">        ListNode t3 = l3_head;</span><br><span class="line">        <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">      <span class="keyword">while</span>(t1!=<span class="keyword">null</span> || t2!=<span class="keyword">null</span>)&#123;</span><br><span class="line">          sum = sum/<span class="number">10</span>;</span><br><span class="line">          <span class="keyword">if</span>(t1!=<span class="keyword">null</span>)&#123;</span><br><span class="line">          sum += t1.val;</span><br><span class="line">           t1 = t1.next;</span><br><span class="line">          &#125;</span><br><span class="line">          <span class="keyword">if</span>(t2!=<span class="keyword">null</span>)&#123;</span><br><span class="line">          sum+= t2.val;</span><br><span class="line">          t2 = t2.next;</span><br><span class="line">          &#125;</span><br><span class="line">          t3.next = <span class="keyword">new</span> ListNode(sum%<span class="number">10</span>);</span><br><span class="line">          t3 = t3.next;</span><br><span class="line">      &#125;</span><br><span class="line">        <span class="keyword">if</span>(sum/<span class="number">10</span> ==<span class="number">1</span>)&#123;</span><br><span class="line">            t3.next = <span class="keyword">new</span> ListNode(<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    </span><br><span class="line">        <span class="keyword">return</span> l3_head.next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p>1.Java集合框架是什么？说出一些集合框架的优点？<br>每种编程语言中都有集合，最初的Java版本包含几种集合类：Vector、Stack、HashTable和Array。随着集合的广泛使用，Java1.2提出了囊括所有集合接口、实现和算法的集合框架。在保证线程安全的情况下使用泛型和并发集合类，Java已经经历了很久。它还包括在Java并发包中，阻塞接口以及它们的实现。集合框架的部分优点如下：<br>（1）使用核心集合类降低开发成本，而非实现我们自己的集合类。<br>（2）随着使用经过严格测试的集合框架类，代码质量会得到提高。<br>（3）通过使用JDK附带的集合类，可以降低代码维护成本。<br>（4）复用性和可操作性。</p>
+<p>2.集合框架中的泛型有什么优点？<br>Java1.5引入了泛型，所有的集合接口和实现都大量地使用它。泛型允许我们为集合提供一个可以容纳的对象类型，因此，如果你添加其它类型的任何元素，它会在编译时报错。这避免了在运行时出现ClassCastException，因为你将会在编译时得到报错信息。泛型也使得代码整洁，我们不需要使用显式转换和instanceOf操作符。它也给运行时带来好处，因为不会产生类型检查的字节码指令。<br>3.Java集合框架的基础接口有哪些？<br>Collection为集合层级的根接口。一个集合代表一组对象，这些对象即为它的元素。Java平台不提供这个接口任何直接的实现。<br>Set是一个不能包含重复元素的集合。这个接口对数学集合抽象进行建模，被用来代表集合，就如一副牌。<br>List是一个有序集合，可以包含重复元素。你可以通过它的索引来访问任何元素。List更像长度动态变换的数组。<br>Map是一个将key映射到value的对象.一个Map不能包含重复的key：每个key最多只能映射一个value。<br>一些其它的接口有Queue、Dequeue、SortedSet、SortedMap和ListIterator。<br>4.为何Collection不从Cloneable和Serializable接口继承？<br>Collection接口指定一组对象，对象即为它的元素。如何维护这些元素由Collection的具体实现决定。例如，一些如List的Collection实现允许重复的元素，而其它的如Set就不允许。很多Collection实现有一个公有的clone方法。然而，把它放到集合的所有实现中也是没有意义的。这是因为Collection是一个抽象表现。重要的是实现。<br>当与具体实现打交道的时候，克隆或序列化的语义和含义才发挥作用。所以，具体实现应该决定如何对它进行克隆或序列化，或它是否可以被克隆或序列化。<br>在所有的实现中授权克隆和序列化，最终导致更少的灵活性和更多的限制。特定的实现应该决定它是否可以被克隆和序列化。<br>5.为何Map接口不继承Collection接口？<br>尽管Map接口和它的实现也是集合框架的一部分，但Map不是集合，集合也不是Map。因此，Map继承Collection毫无意义，反之亦然。<br>如果Map继承Collection接口，那么元素去哪儿？Map包含key-value对，它提供抽取key或value列表集合的方法，但是它不适合“一组对象”规范。<br>6.Iterator是什么？<br>Iterator接口提供遍历任何Collection的接口。我们可以从一个Collection中使用迭代器方法来获取迭代器实例。迭代器取代了Java集合框架中的Enumeration。迭代器允许调用者在迭代过程中移除元素。<br>7.Enumeration和Iterator接口的区别？<br>Enumeration的速度是Iterator的两倍，也使用更少的内存。Enumeration是非常基础的，也满足了基础的需要。但是，与Enumeration相比，Iterator更加安全，因为当一个集合正在被遍历的时候，它会阻止其它线程去修改集合。<br>迭代器取代了Java集合框架中的Enumeration。迭代器允许调用者从集合中移除元素，而Enumeration不能做到。为了使它的功能更加清晰，迭代器方法名已经经过改善。<br>8.为何没有像Iterator.add()这样的方法，向集合中添加元素？<br>语义不明，已知的是，Iterator的协议不能确保迭代的次序。然而要注意，ListIterator没有提供一个add操作，它要确保迭代的顺序。<br>9.为何迭代器没有一个方法可以直接获取下一个元素，而不需要移动游标？<br>它可以在当前Iterator的顶层实现，但是它用得很少，如果将它加到接口中，每个继承都要去实现它，这没有意义。<br>10.Iterater和ListIterator之间有什么区别？<br>（1）我们可以使用Iterator来遍历Set和List集合，而ListIterator只能遍历List。<br>（2）Iterator只可以向前遍历，而LIstIterator可以双向遍历。<br>（3）ListIterator从Iterator接口继承，然后添加了一些额外的功能，比如添加一个元素、替换一个元素、获取前面或后面元素的索引位置。</p>
 
       
     </div>
@@ -334,11 +329,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/leetcode/" rel="tag"># leetcode</a>
-          
-            <a href="/tags/算法/" rel="tag"># 算法</a>
-          
-            <a href="/tags/CTCI/" rel="tag"># CTCI</a>
+            <a href="/tags/JDK/" rel="tag"># JDK</a>
           
         </div>
       
@@ -351,8 +342,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/20/hi/" rel="next" title="Hello hexo and markdown">
-                <i class="fa fa-chevron-left"></i> Hello hexo and markdown
+              <a href="/2018/03/28/JDK集合框架的优势 - 副本/" rel="next" title="JDK集合框架复用性">
+                <i class="fa fa-chevron-left"></i> JDK集合框架复用性
               </a>
             
           </div>
@@ -360,10 +351,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/03/23/字符串-ctci-1-1/" rel="prev" title="字符串_ctci_1.1">
-                字符串_ctci_1.1 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -415,17 +402,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -444,7 +422,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -457,7 +435,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -480,22 +458,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分析"><span class="nav-number">2.</span> <span class="nav-text">分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#源码"><span class="nav-number">3.</span> <span class="nav-text">源码</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
