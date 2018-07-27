@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="算法,CTCI," />
+  <meta name="keywords" content="java,web,summary," />
 
 
 
@@ -79,18 +79,20 @@
 
 
 
-<meta name="description" content="1实现一个算法，确定一个字符串的所有字符是否全都不同。 首先刚开始对这个字符串的编码方式进行了解非常必要，可以先假定字符集为ASCII编码；如果字符串的长度大于字符集的个数256那么必定会有重复的字符，直接返回false； 解法 将字符串中的每一个字符与其余字符进行比较，这样时间复杂度为O(n^2)，空间复杂度为O(1); 如果允许修改输入的字符串，可以对字符串进行排序，然后查找相邻的字符是否相等">
-<meta name="keywords" content="算法,CTCI">
+<meta name="description" content="#servletservlet在java中的基本作用示意图 servlet 是浏览器和数据库的中间一层Java servlet是运行在带有java servlet规范的解释器的web服务器上的java类（比如tomcat就是其中一款开源免费的来自Apache的服务器） #servlet的生命周期 通过init函数进行初始化，service用来进行处理客户端的请求，destroy结束执行。通过jvm">
+<meta name="keywords" content="java,web,summary">
 <meta property="og:type" content="article">
-<meta property="og:title" content="字符串_ctci_1.1">
-<meta property="og:url" content="http://yoursite.com/2018/03/23/字符串-ctci-1-1/index.html">
+<meta property="og:title" content="servlet">
+<meta property="og:url" content="http://yoursite.com/2018/07/25/servlet/index.html">
 <meta property="og:site_name" content="player949">
-<meta property="og:description" content="1实现一个算法，确定一个字符串的所有字符是否全都不同。 首先刚开始对这个字符串的编码方式进行了解非常必要，可以先假定字符集为ASCII编码；如果字符串的长度大于字符集的个数256那么必定会有重复的字符，直接返回false； 解法 将字符串中的每一个字符与其余字符进行比较，这样时间复杂度为O(n^2)，空间复杂度为O(1); 如果允许修改输入的字符串，可以对字符串进行排序，然后查找相邻的字符是否相等">
+<meta property="og:description" content="#servletservlet在java中的基本作用示意图 servlet 是浏览器和数据库的中间一层Java servlet是运行在带有java servlet规范的解释器的web服务器上的java类（比如tomcat就是其中一款开源免费的来自Apache的服务器） #servlet的生命周期 通过init函数进行初始化，service用来进行处理客户端的请求，destroy结束执行。通过jvm">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-23T14:04:31.350Z">
+<meta property="og:image" content="http://yoursite.com/images/servlet_image1.png">
+<meta property="og:updated_time" content="2018-07-26T07:05:46.057Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="字符串_ctci_1.1">
-<meta name="twitter:description" content="1实现一个算法，确定一个字符串的所有字符是否全都不同。 首先刚开始对这个字符串的编码方式进行了解非常必要，可以先假定字符集为ASCII编码；如果字符串的长度大于字符集的个数256那么必定会有重复的字符，直接返回false； 解法 将字符串中的每一个字符与其余字符进行比较，这样时间复杂度为O(n^2)，空间复杂度为O(1); 如果允许修改输入的字符串，可以对字符串进行排序，然后查找相邻的字符是否相等">
+<meta name="twitter:title" content="servlet">
+<meta name="twitter:description" content="#servletservlet在java中的基本作用示意图 servlet 是浏览器和数据库的中间一层Java servlet是运行在带有java servlet规范的解释器的web服务器上的java类（比如tomcat就是其中一款开源免费的来自Apache的服务器） #servlet的生命周期 通过init函数进行初始化，service用来进行处理客户端的请求，destroy结束执行。通过jvm">
+<meta name="twitter:image" content="http://yoursite.com/images/servlet_image1.png">
 
 
 
@@ -120,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/03/23/字符串-ctci-1-1/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/25/servlet/"/>
 
 
 
 
 
-  <title>字符串_ctci_1.1 | player949</title>
+  <title>servlet | player949</title>
   
 
 
@@ -243,7 +245,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/23/字符串-ctci-1-1/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/25/servlet/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王光远">
@@ -260,7 +262,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">字符串_ctci_1.1</h1>
+          <h1 class="post-title" itemprop="name headline">servlet</h1>
         
 
         <div class="post-meta">
@@ -272,8 +274,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-23T21:33:17+08:00">
-                2018-03-23
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-25T10:43:33+08:00">
+                2018-07-25
               </time>
             
 
@@ -310,15 +312,21 @@
       
 
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">实现一个算法，确定一个字符串的所有字符是否全都不同。</span><br></pre></td></tr></table></figure>
-<p>首先刚开始对这个字符串的编码方式进行了解非常必要，可以先假定字符集为ASCII编码；如果字符串的长度大于字符集的个数256那么必定会有重复的字符，直接返回false；</p>
-<h2 id="解法"><a href="#解法" class="headerlink" title="解法"></a>解法</h2><ul>
-<li>将字符串中的每一个字符与其余字符进行比较，这样时间复杂度为O(n^2)，空间复杂度为O(1);</li>
-<li>如果允许修改输入的字符串，可以对字符串进行排序，然后查找相邻的字符是否相等即可，时间复杂度为O(nlogn)+O(n) 部分排序算法可能会需要较多的内存空间</li>
-<li>建立布尔类型数组，索引i表示字符串中是否有字符集第i个字符；若这个字符第二次出现直接返回false；时间复杂度为O(n)，空间复杂度为O(1)</li>
-</ul>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isUniqueChars</span><span class="params">(String str)</span></span>&#123;</span><br><span class="line">   <span class="keyword">if</span>(str.length()&gt;<span class="number">256</span>) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">   <span class="keyword">boolean</span>[] char_set = <span class="keyword">new</span> <span class="keyword">boolean</span>[<span class="number">256</span>];</span><br><span class="line">   <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i&lt;str.length();i++)&#123;</span><br><span class="line">       <span class="keyword">int</span> val = str.charAt(i);</span><br><span class="line">       <span class="keyword">if</span>(char_set[val])&#123;</span><br><span class="line">           <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">       &#125;</span><br><span class="line">       char_set[val] = <span class="keyword">true</span>;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+        <p>#servlet<br>servlet在java中的基本作用示意图<br><img src="/images/servlet_image1.png" alt="servlet"></p>
+<h2 id="servlet-是浏览器和数据库的中间一层"><a href="#servlet-是浏览器和数据库的中间一层" class="headerlink" title="servlet 是浏览器和数据库的中间一层"></a>servlet 是浏览器和数据库的中间一层</h2><p>Java servlet是运行在带有java servlet规范的解释器的web服务器上的java类<br>（比如tomcat就是其中一款开源免费的来自Apache的服务器）</p>
+<p>#servlet的生命周期</p>
+<p>通过init函数进行初始化，service用来进行处理客户端的请求，<br>destroy结束执行。通过jvm垃圾回收机制回收垃圾</p>
+<p>servlet在进行初始化时加载和创建一部分的数据，这些数据将会伴随servlet的整个生命周期</p>
+<p>service方法，该方法是执行实际任务的主要方法。servlet容器（web服务器）<br>调用service方法来处理来自客户端的请求，并把格式化的响应返回给客户端<br>接收到一个servlet请求时，服务器会产生一个新的线程调用服务</p>
+<p>service方法由容器调用，不用对service做改动，只需要根据客户端的请求类型重写对应的doGet或doPost方法</p>
+<p>destroy() 方法只会被调用一次，在 Servlet 生命周期结束时被调用。destroy() 方法可以让您的 Servlet 关闭数据库连接、停止后台线程、把 Cookie 列表或点击计数器写入到磁盘，并执行其他类似的清理活动。</p>
+<p>在调用 destroy() 方法之后，servlet 对象被标记为垃圾回收。</p>
+<p>##servlet表单数据<br>很多情况下传递信息，从浏览器到web服务器，再到后台程序，从浏览器到web服务器有两种方法，get和post<br><em>get方法是默认从浏览器向web服务器传递信息的方法，会产生一个很长的字符串</em><br>会出现在浏览器的地址栏中，<strong>敏感信息不要使用get方法</strong><br>get请求的字符串最多只能用1024个字符，servlet使用doGet处理这种类型的请求</p>
+<p>###使用servlet读取表单数据</p>
+<pre><code>getParameter()：您可以调用 request.getParameter() 方法来获取表单参数的值。
+getParameterValues()：如果参数出现一次以上，则调用该方法，并返回多个值，例如复选框。
+getParameterNames()：如果您想要得到当前请求中的所有参数的完整列表，则调用该方法。
+</code></pre>
       
     </div>
     
@@ -335,9 +343,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/算法/" rel="tag"># 算法</a>
+            <a href="/tags/java/" rel="tag"># java</a>
           
-            <a href="/tags/CTCI/" rel="tag"># CTCI</a>
+            <a href="/tags/web/" rel="tag"># web</a>
+          
+            <a href="/tags/summary/" rel="tag"># summary</a>
           
         </div>
       
@@ -350,8 +360,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/20/leetcode/" rel="next" title="Add Two Numbers">
-                <i class="fa fa-chevron-left"></i> Add Two Numbers
+              <a href="/2018/04/22/又一次感冒，又一次重新出发/" rel="next" title="又一次感冒，又一次重新出发">
+                <i class="fa fa-chevron-left"></i> 又一次感冒，又一次重新出发
               </a>
             
           </div>
@@ -360,8 +370,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/03/26/蓝桥杯/" rel="prev" title="蓝桥杯">
-                蓝桥杯 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/07/26/servlet客户端http请求/" rel="prev" title="servlet客户端http请求">
+                servlet客户端http请求 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -489,7 +499,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#解法"><span class="nav-number">1.</span> <span class="nav-text">解法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">2.</span> <span class="nav-text">代码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#servlet-是浏览器和数据库的中间一层"><span class="nav-number">1.</span> <span class="nav-text">servlet 是浏览器和数据库的中间一层</span></a></li></ol></div>
             
 
           </div>
